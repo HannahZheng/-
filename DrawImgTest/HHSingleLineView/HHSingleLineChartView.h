@@ -8,6 +8,28 @@
 
 #import <UIKit/UIKit.h>
 
+//适配 ---------------------
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREENH_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+
+//用分辨率做屏幕的适配（基于6s）
+#define kMaxOfWOrH MAX(SCREEN_WIDTH, SCREENH_HEIGHT)
+#define kMinOfWOrH MIN(SCREEN_WIDTH, SCREENH_HEIGHT)
+/**
+ *   高度 * 屏幕高 / 1334
+ */
+#define kRelativeHeight(h) (h) * kMaxOfWOrH / 667.0
+/**
+ *   宽度 * 屏幕宽 / 750
+ */
+#define kRelativeWidth(w) (w) * kMinOfWOrH / 375.0
+#define kRelativeFontSize(fs) fs * kMinOfWOrH / 375.0
+#define kFont(fs) [UIFont systemFontOfSize:kRelativeFontSize(fs)]
+
+#define kWidthPercent kMinOfWOrH / 375.0
+#define kHeightPercent kMaxOfWOrH / 667.0
+
 #define HHMainScreenWidth [UIScreen mainScreen].bounds.size.width
 #define HHMainScreenHeight [UIScreen mainScreen].bounds.size.height
 #define HHMainScreenBounds [UIScreen mainScreen].bounds
@@ -29,6 +51,7 @@
 @property (nonatomic, strong) UIColor *xyLabelColor;
 @property (nonatomic, strong) UIColor *curveColor;//HHColor(247, 26, 48)
 @property (nonatomic, strong) UIColor *gradientStartColor;//HHColor(250, 218, 216)
+@property (nonatomic, strong) UIColor *gradientEndColor;
 @property (nonatomic, strong) UIColor *pointColor;
 @property (nonatomic, strong) UIColor *popBgColor;
 @property (nonatomic, strong) UIColor *popTextColor;

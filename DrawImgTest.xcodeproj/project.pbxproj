@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211F86851F18A31800DC9B5E /* HHSingleLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 211F86841F18A31800DC9B5E /* HHSingleLineChartView.m */; };
 		211F868B1F18C38D00DC9B5E /* CFLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 211F868A1F18C38D00DC9B5E /* CFLineChartView.m */; };
 		211F868F1F18E6E500DC9B5E /* CFLineChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 211F868E1F18E6E500DC9B5E /* CFLineChartView.xib */; };
 		211F86921F18ECC800DC9B5E /* index-circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211F86901F18ECC800DC9B5E /* index-circle@2x.png */; };
 		211F86931F18ECC800DC9B5E /* index-circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211F86911F18ECC800DC9B5E /* index-circle@3x.png */; };
+		219EF79D1F203907009BB7AC /* HHSingleLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 219EF79C1F203907009BB7AC /* HHSingleLineChartView.m */; };
 		21A2A99A1F16198A00805516 /* GMChainSelectSingleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A2A9991F16198A00805516 /* GMChainSelectSingleView.m */; };
 		21F11D8C1F0E04A10099C9CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F11D8B1F0E04A10099C9CA /* main.m */; };
 		21F11D8F1F0E04A10099C9CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F11D8E1F0E04A10099C9CA /* AppDelegate.m */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		211F86831F18A31800DC9B5E /* HHSingleLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSingleLineChartView.h; sourceTree = "<group>"; };
-		211F86841F18A31800DC9B5E /* HHSingleLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSingleLineChartView.m; sourceTree = "<group>"; };
 		211F86891F18C38D00DC9B5E /* CFLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFLineChartView.h; sourceTree = "<group>"; };
 		211F868A1F18C38D00DC9B5E /* CFLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFLineChartView.m; sourceTree = "<group>"; };
 		211F868E1F18E6E500DC9B5E /* CFLineChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CFLineChartView.xib; sourceTree = "<group>"; };
 		211F86901F18ECC800DC9B5E /* index-circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index-circle@2x.png"; sourceTree = "<group>"; };
 		211F86911F18ECC800DC9B5E /* index-circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "index-circle@3x.png"; sourceTree = "<group>"; };
+		219EF79B1F203907009BB7AC /* HHSingleLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSingleLineChartView.h; sourceTree = "<group>"; };
+		219EF79C1F203907009BB7AC /* HHSingleLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSingleLineChartView.m; sourceTree = "<group>"; };
 		21A2A9981F16198A00805516 /* GMChainSelectSingleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMChainSelectSingleView.h; sourceTree = "<group>"; };
 		21A2A9991F16198A00805516 /* GMChainSelectSingleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMChainSelectSingleView.m; sourceTree = "<group>"; };
 		21F11D871F0E04A10099C9CA /* DrawImgTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawImgTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219EF79A1F203907009BB7AC /* HHSingleLineView */ = {
+			isa = PBXGroup;
+			children = (
+				219EF79B1F203907009BB7AC /* HHSingleLineChartView.h */,
+				219EF79C1F203907009BB7AC /* HHSingleLineChartView.m */,
+			);
+			path = HHSingleLineView;
+			sourceTree = "<group>";
+		};
 		21F11D7E1F0E04A10099C9CA = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +88,12 @@
 		21F11D891F0E04A10099C9CA /* DrawImgTest */ = {
 			isa = PBXGroup;
 			children = (
+				219EF79A1F203907009BB7AC /* HHSingleLineView */,
 				211F86891F18C38D00DC9B5E /* CFLineChartView.h */,
 				211F868A1F18C38D00DC9B5E /* CFLineChartView.m */,
 				211F86901F18ECC800DC9B5E /* index-circle@2x.png */,
 				211F86911F18ECC800DC9B5E /* index-circle@3x.png */,
 				211F868E1F18E6E500DC9B5E /* CFLineChartView.xib */,
-				211F86831F18A31800DC9B5E /* HHSingleLineChartView.h */,
-				211F86841F18A31800DC9B5E /* HHSingleLineChartView.m */,
 				21F11DA11F0E05180099C9CA /* 12345.png */,
 				21F11D8D1F0E04A10099C9CA /* AppDelegate.h */,
 				21F11D8E1F0E04A10099C9CA /* AppDelegate.m */,
@@ -199,7 +207,7 @@
 				211F868B1F18C38D00DC9B5E /* CFLineChartView.m in Sources */,
 				21F11D8F1F0E04A10099C9CA /* AppDelegate.m in Sources */,
 				21F11D8C1F0E04A10099C9CA /* main.m in Sources */,
-				211F86851F18A31800DC9B5E /* HHSingleLineChartView.m in Sources */,
+				219EF79D1F203907009BB7AC /* HHSingleLineChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
